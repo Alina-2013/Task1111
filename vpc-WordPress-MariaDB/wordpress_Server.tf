@@ -1,8 +1,8 @@
 resource "aws_instance" "WordPressServer" {
   ami                         = "${data.aws_ami.centos.id}"
-  associate_public_ip_address =  true
+  associate_public_ip_address = true
   instance_type               = "${var.instance_type_wp}"
-  key_name                    = "${aws_key_pair.bastion.key_name}"
+  key_name                    = "${aws_key_pair.Bastion2.key_name}"
   vpc_security_group_ids      = ["${aws_security_group.wordpress_server.id}"]
   subnet_id                   = "${aws_subnet.pub_sub_102.id}"
 

@@ -14,5 +14,5 @@ tags = {
     Environment = "Dev"
     Team        = "Infrastructure"
     Department  = "IT"
-    Created_by  =  "Alina S"
+    Created_by       = "Alina"
 }

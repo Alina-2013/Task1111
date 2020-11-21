@@ -1,5 +1,5 @@
 module "VPC" {
-  source              = "../"
+  source              =  "Alina-2013/vpc_WordPress_MariaDB/aws"
   region              = "${var.region}"
   cidr_block          = "${var.cidr_block }"
   private_cidr_block1 = "${var.private_cidr_block1}"
