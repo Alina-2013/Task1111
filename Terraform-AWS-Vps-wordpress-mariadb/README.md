@@ -5,7 +5,7 @@ This module will create a WordPress Server and MariaDB instance on public subnet
 
 ```
 module "VPC" {
-  source              = "vrodi18/vpc-WordPress-MariaDB/aws"
+  source              = "../"
   region              = "${var.region}"
   cidr_block          = "${var.cidr_block }"
   private_cidr_block1 = "${var.private_cidr_block1}"
